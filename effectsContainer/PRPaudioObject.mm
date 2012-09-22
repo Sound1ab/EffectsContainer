@@ -1189,7 +1189,7 @@ static OSStatus fileRenderCallback (
 	//************************************************************
     
     
-    
+    /*
     //Set mixer units input 3 asbd to file players output asbd
     result = AudioUnitSetProperty (
 								   mMixer,
@@ -1217,7 +1217,7 @@ static OSStatus fileRenderCallback (
 										  &input3CallbackStruct
 										  );
      
-     
+     */
     
     //enable input
 /*

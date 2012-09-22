@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		484B90FC15EDAE5600898819 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484B90FB15EDAE5600898819 /* UIKit.framework */; };
+		484B90FE15EDAE5600898819 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484B90FD15EDAE5600898819 /* Foundation.framework */; };
+		484B910015EDAE5600898819 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484B90FF15EDAE5600898819 /* CoreGraphics.framework */; };
+		484B910615EDAE5600898819 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 484B910415EDAE5600898819 /* InfoPlist.strings */; };
+		484B910815EDAE5600898819 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 484B910715EDAE5600898819 /* main.m */; };
+		484B910C15EDAE5600898819 /* PRPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 484B910B15EDAE5600898819 /* PRPAppDelegate.m */; };
+		484B910F15EDAE5700898819 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484B910D15EDAE5700898819 /* MainStoryboard.storyboard */; };
+		484B911215EDAE5700898819 /* PRPFirstViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 484B911115EDAE5700898819 /* PRPFirstViewController.mm */; };
+		484B911415EDAE5700898819 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 484B911315EDAE5700898819 /* first.png */; };
+		484B911615EDAE5700898819 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 484B911515EDAE5700898819 /* first@2x.png */; };
+		484B911915EDAE5700898819 /* PRPSecondViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 484B911815EDAE5700898819 /* PRPSecondViewController.mm */; };
+		484B911B15EDAE5700898819 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 484B911A15EDAE5700898819 /* second.png */; };
+		484B911D15EDAE5700898819 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 484B911C15EDAE5700898819 /* second@2x.png */; };
+		484B912415EDB22F00898819 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484B912315EDB22F00898819 /* AVFoundation.framework */; };
+		484B912615EDB23500898819 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484B912515EDB23500898819 /* AudioToolbox.framework */; };
+		484B913015EDB28100898819 /* PRPaudioObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 484B912F15EDB28100898819 /* PRPaudioObject.mm */; };
+		484B913715EDB39200898819 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 484B913415EDB39200898819 /* CAStreamBasicDescription.cpp */; };
+		484B913915EDB99100898819 /* Easy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 484B913815EDB99100898819 /* Easy.mp3 */; };
+		484B913C15EE75C300898819 /* PRPThirdViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 484B913B15EE75C200898819 /* PRPThirdViewController.mm */; };
+		4860EB2215FA653D006F49FE /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860EB2115FA653D006F49FE /* UIImage+ColorAtPixel.m */; };
+		487CEB0015F2820800EEBBF0 /* RecordButtonDepressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 487CEAFE15F2820800EEBBF0 /* RecordButtonDepressed.png */; };
+		487CEB0115F2820800EEBBF0 /* RecordButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 487CEAFF15F2820800EEBBF0 /* RecordButtonPressed.png */; };
+		48C4072815F529C300EBDCBE /* Knob Background_Disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 48C4072715F529C300EBDCBE /* Knob Background_Disabled.png */; };
+		48C4072B15F52A7800EBDCBE /* rotaryDialMaster_Disabled_Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 48C4072A15F52A7800EBDCBE /* rotaryDialMaster_Disabled_Small.png */; };
+		48D280A015EE8F2C00497984 /* PRPFourthViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48D2809F15EE8F2C00497984 /* PRPFourthViewController.mm */; };
+		48D280A315EE961200497984 /* PRPFifthViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48D280A215EE961200497984 /* PRPFifthViewController.mm */; };
+		48D280B115EED28100497984 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D280B015EED28100497984 /* QuartzCore.framework */; };
+		48D280CA15EEE1AE00497984 /* MHRotaryKnob.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D280C915EEE1AE00497984 /* MHRotaryKnob.m */; };
+		48D280D415EEE1DC00497984 /* Knob Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280CC15EEE1DC00497984 /* Knob Background.png */; };
+		48D280D515EEE1DC00497984 /* Knob Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280CD15EEE1DC00497984 /* Knob Background@2x.png */; };
+		48D280D615EEE1DC00497984 /* Knob Disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280CE15EEE1DC00497984 /* Knob Disabled.png */; };
+		48D280D715EEE1DC00497984 /* Knob Disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280CF15EEE1DC00497984 /* Knob Disabled@2x.png */; };
+		48D280D815EEE1DC00497984 /* Knob Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280D015EEE1DC00497984 /* Knob Highlighted.png */; };
+		48D280D915EEE1DC00497984 /* Knob Highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280D115EEE1DC00497984 /* Knob Highlighted@2x.png */; };
+		48D280DA15EEE1DC00497984 /* Knob.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280D215EEE1DC00497984 /* Knob.png */; };
+		48D280DB15EEE1DC00497984 /* Knob@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280D315EEE1DC00497984 /* Knob@2x.png */; };
+		48D280DE15EF09B700497984 /* Knob Background_New.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280DC15EF09B700497984 /* Knob Background_New.png */; };
+		48D280DF15EF09B700497984 /* Knob_New.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280DD15EF09B700497984 /* Knob_New.png */; };
+		48D280E815EFC65500497984 /* sliderBarLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280E415EFC65500497984 /* sliderBarLeft.png */; };
+		48D280E915EFC65500497984 /* sliderBarRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280E515EFC65500497984 /* sliderBarRight.png */; };
+		48D280EA15EFC65500497984 /* sliderButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280E615EFC65500497984 /* sliderButton.png */; };
+		48D280EB15EFC65500497984 /* sliderButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280E715EFC65500497984 /* sliderButtonPressed.png */; };
+		48D280EE15EFC8F000497984 /* sliderButtonDepressed_New.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280EC15EFC8EF00497984 /* sliderButtonDepressed_New.png */; };
+		48D280EF15EFC8F000497984 /* sliderButtonPressed_New.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280ED15EFC8F000497984 /* sliderButtonPressed_New.png */; };
+		48D280F115EFCDC300497984 /* mixerTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280F015EFCDC300497984 /* mixerTab.png */; };
+		48D280F315EFD03800497984 /* reverbTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280F215EFD03800497984 /* reverbTab.png */; };
+		48D280F515EFD3BB00497984 /* filterTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280F415EFD3BB00497984 /* filterTab.png */; };
+		48D280F715EFD97D00497984 /* varispeedTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280F615EFD97D00497984 /* varispeedTab.png */; };
+		48D280F915EFEACA00497984 /* compressorTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280F815EFEACA00497984 /* compressorTab.png */; };
+		48D280FC15F0164900497984 /* Knob Background_Mini.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280FA15F0164900497984 /* Knob Background_Mini.png */; };
+		48D280FD15F0164900497984 /* Knob_Mini.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D280FB15F0164900497984 /* Knob_Mini.png */; };
+		48D2810215F020B600497984 /* beatsMono.caf in Resources */ = {isa = PBXBuildFile; fileRef = 48D2810015F020B500497984 /* beatsMono.caf */; };
+		48D2810315F020B600497984 /* guitarStereo.caf in Resources */ = {isa = PBXBuildFile; fileRef = 48D2810115F020B500497984 /* guitarStereo.caf */; };
+		48D2810C15F02D0A00497984 /* stopButtonDepressedLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D2810815F02D0900497984 /* stopButtonDepressedLarge.png */; };
+		48D2810D15F02D0A00497984 /* stopButtonPressedLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D2810915F02D0900497984 /* stopButtonPressedLarge.png */; };
+		48D2810E15F02D0A00497984 /* PlayButtonDepressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D2810A15F02D0900497984 /* PlayButtonDepressed.png */; };
+		48D2810F15F02D0A00497984 /* PlayButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D2810B15F02D0A00497984 /* PlayButtonPressed.png */; };
+		48F401DB15F4E27B00E513B8 /* smbPitchShift.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F401DA15F4E27B00E513B8 /* smbPitchShift.m */; };
+		48F401DE15F4E73B00E513B8 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F401DD15F4E73B00E513B8 /* Accelerate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		484B90F715EDAE5600898819 /* effectsContainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = effectsContainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		484B90FB15EDAE5600898819 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		484B90FD15EDAE5600898819 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		484B90FF15EDAE5600898819 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		484B910315EDAE5600898819 /* effectsContainer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "effectsContainer-Info.plist"; sourceTree = "<group>"; };
+		484B910515EDAE5600898819 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		484B910715EDAE5600898819 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		484B910915EDAE5600898819 /* effectsContainer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "effectsContainer-Prefix.pch"; sourceTree = "<group>"; };
+		484B910A15EDAE5600898819 /* PRPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRPAppDelegate.h; sourceTree = "<group>"; };
+		484B910B15EDAE5600898819 /* PRPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRPAppDelegate.m; sourceTree = "<group>"; };
+		484B910E15EDAE5700898819 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		484B911015EDAE5700898819 /* PRPFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRPFirstViewController.h; sourceTree = "<group>"; };
+		484B911115EDAE5700898819 /* PRPFirstViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PRPFirstViewController.mm; sourceTree = "<group>"; };
+		484B911315EDAE5700898819 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		484B911515EDAE5700898819 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		484B911715EDAE5700898819 /* PRPSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRPSecondViewController.h; sourceTree = "<group>"; };
+		484B911815EDAE5700898819 /* PRPSecondViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PRPSecondViewController.mm; sourceTree = "<group>"; };
+		484B911A15EDAE5700898819 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		484B911C15EDAE5700898819 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		484B912315EDB22F00898819 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		484B912515EDB23500898819 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		484B912E15EDB28100898819 /* PRPaudioObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPaudioObject.h; sourceTree = "<group>"; };
+		484B912F15EDB28100898819 /* PRPaudioObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PRPaudioObject.mm; sourceTree = "<group>"; };
+		484B913115EDB39200898819 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		484B913215EDB39200898819 /* CADebugPrintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugPrintf.h; sourceTree = "<group>"; };
+		484B913315EDB39200898819 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		484B913415EDB39200898819 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		484B913515EDB39200898819 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		484B913615EDB39200898819 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		484B913815EDB99100898819 /* Easy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Easy.mp3; sourceTree = "<group>"; };
+		484B913A15EE75C100898819 /* PRPThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPThirdViewController.h; sourceTree = "<group>"; };
+		484B913B15EE75C200898819 /* PRPThirdViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PRPThirdViewController.mm; sourceTree = "<group>"; };
+		4860EB2015FA653D006F49FE /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
+		4860EB2115FA653D006F49FE /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
+		487CEAFE15F2820800EEBBF0 /* RecordButtonDepressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordButtonDepressed.png; sourceTree = "<group>"; };
+		487CEAFF15F2820800EEBBF0 /* RecordButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordButtonPressed.png; sourceTree = "<group>"; };
+		48C4072715F529C300EBDCBE /* Knob Background_Disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Knob Background_Disabled.png"; sourceTree = "<group>"; };
+		48C4072A15F52A7800EBDCBE /* rotaryDialMaster_Disabled_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotaryDialMaster_Disabled_Small.png; sourceTree = "<group>"; };
+		48D2809E15EE8F2C00497984 /* PRPFourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPFourthViewController.h; sourceTree = "<group>"; };
+		48D2809F15EE8F2C00497984 /* PRPFourthViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PRPFourthViewController.mm; sourceTree = "<group>"; };
+		48D280A115EE961200497984 /* PRPFifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPFifthViewController.h; sourceTree = "<group>"; };
+		48D280A215EE961200497984 /* PRPFifthViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PRPFifthViewController.mm; sourceTree = "<group>"; };
+		48D280B015EED28100497984 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		48D280C815EEE1AE00497984 /* MHRotaryKnob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHRotaryKnob.h; sourceTree = "<group>"; };
+		48D280C915EEE1AE00497984 /* MHRotaryKnob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHRotaryKnob.m; sourceTree = "<group>"; };
+		48D280CC15EEE1DC00497984 /* Knob Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Knob Background.png"; sourceTree = "<group>"; };
+		48D280CD15EEE1DC00497984 /* Knob Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Knob Background@2x.png"; sourceTree = "<group>"; };
+		48D280CE15EEE1DC00497984 /* Knob Disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Knob Disabled.png"; sourceTree = "<group>"; };
+		48D280CF15EEE1DC00497984 /* Knob Disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Knob Disabled@2x.png"; sourceTree = "<group>"; };
+		48D280D015EEE1DC00497984 /* Knob Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Knob Highlighted.png"; sourceTree = "<group>"; };
+		48D280D115EEE1DC00497984 /* Knob Highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Knob Highlighted@2x.png"; sourceTree = "<group>"; };
+		48D280D215EEE1DC00497984 /* Knob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Knob.png; sourceTree = "<group>"; };
+		48D280D315EEE1DC00497984 /* Knob@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Knob@2x.png"; sourceTree = "<group>"; };
+		48D280DC15EF09B700497984 /* Knob Background_New.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Knob Background_New.png"; sourceTree = "<group>"; };
+		48D280DD15EF09B700497984 /* Knob_New.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Knob_New.png; sourceTree = "<group>"; };
+		48D280E415EFC65500497984 /* sliderBarLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderBarLeft.png; sourceTree = "<group>"; };
+		48D280E515EFC65500497984 /* sliderBarRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderBarRight.png; sourceTree = "<group>"; };
+		48D280E615EFC65500497984 /* sliderButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderButton.png; sourceTree = "<group>"; };
+		48D280E715EFC65500497984 /* sliderButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderButtonPressed.png; sourceTree = "<group>"; };
+		48D280EC15EFC8EF00497984 /* sliderButtonDepressed_New.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderButtonDepressed_New.png; sourceTree = "<group>"; };
+		48D280ED15EFC8F000497984 /* sliderButtonPressed_New.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderButtonPressed_New.png; sourceTree = "<group>"; };
+		48D280F015EFCDC300497984 /* mixerTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixerTab.png; sourceTree = "<group>"; };
+		48D280F215EFD03800497984 /* reverbTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reverbTab.png; sourceTree = "<group>"; };
+		48D280F415EFD3BB00497984 /* filterTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filterTab.png; sourceTree = "<group>"; };
+		48D280F615EFD97D00497984 /* varispeedTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = varispeedTab.png; sourceTree = "<group>"; };
+		48D280F815EFEACA00497984 /* compressorTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compressorTab.png; sourceTree = "<group>"; };
+		48D280FA15F0164900497984 /* Knob Background_Mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Knob Background_Mini.png"; sourceTree = "<group>"; };
+		48D280FB15F0164900497984 /* Knob_Mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Knob_Mini.png; sourceTree = "<group>"; };
+		48D2810015F020B500497984 /* beatsMono.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beatsMono.caf; sourceTree = "<group>"; };
+		48D2810115F020B500497984 /* guitarStereo.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = guitarStereo.caf; sourceTree = "<group>"; };
+		48D2810815F02D0900497984 /* stopButtonDepressedLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopButtonDepressedLarge.png; sourceTree = "<group>"; };
+		48D2810915F02D0900497984 /* stopButtonPressedLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopButtonPressedLarge.png; sourceTree = "<group>"; };
+		48D2810A15F02D0900497984 /* PlayButtonDepressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayButtonDepressed.png; sourceTree = "<group>"; };
+		48D2810B15F02D0A00497984 /* PlayButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayButtonPressed.png; sourceTree = "<group>"; };
+		48F401DA15F4E27B00E513B8 /* smbPitchShift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smbPitchShift.m; sourceTree = "<group>"; };
+		48F401DD15F4E73B00E513B8 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		484B90F415EDAE5600898819 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F401DE15F4E73B00E513B8 /* Accelerate.framework in Frameworks */,
+				48D280B115EED28100497984 /* QuartzCore.framework in Frameworks */,
+				484B912615EDB23500898819 /* AudioToolbox.framework in Frameworks */,
+				484B912415EDB22F00898819 /* AVFoundation.framework in Frameworks */,
+				484B90FC15EDAE5600898819 /* UIKit.framework in Frameworks */,
+				484B90FE15EDAE5600898819 /* Foundation.framework in Frameworks */,
+				484B910015EDAE5600898819 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		484B90EC15EDAE5600898819 = {
+			isa = PBXGroup;
+			children = (
+				48F401DD15F4E73B00E513B8 /* Accelerate.framework */,
+				484B910115EDAE5600898819 /* effectsContainer */,
+				484B90FA15EDAE5600898819 /* Frameworks */,
+				484B90F815EDAE5600898819 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		484B90F815EDAE5600898819 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				484B90F715EDAE5600898819 /* effectsContainer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		484B90FA15EDAE5600898819 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48D280B015EED28100497984 /* QuartzCore.framework */,
+				484B912515EDB23500898819 /* AudioToolbox.framework */,
+				484B912315EDB22F00898819 /* AVFoundation.framework */,
+				484B90FB15EDAE5600898819 /* UIKit.framework */,
+				484B90FD15EDAE5600898819 /* Foundation.framework */,
+				484B90FF15EDAE5600898819 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		484B910115EDAE5600898819 /* effectsContainer */ = {
+			isa = PBXGroup;
+			children = (
+				484B910A15EDAE5600898819 /* PRPAppDelegate.h */,
+				484B910B15EDAE5600898819 /* PRPAppDelegate.m */,
+				484B910D15EDAE5700898819 /* MainStoryboard.storyboard */,
+				48D280AC15EED1A700497984 /* Knob */,
+				48D2809D15EE7ADF00497984 /* Audio */,
+				48D2809C15EE7ACC00497984 /* View Controllers */,
+				48D2809A15EE7AB000497984 /* iPublicUtility */,
+				484B910215EDAE5600898819 /* Supporting Files */,
+			);
+			path = effectsContainer;
+			sourceTree = "<group>";
+		};
+		484B910215EDAE5600898819 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				48D2810015F020B500497984 /* beatsMono.caf */,
+				48D2810115F020B500497984 /* guitarStereo.caf */,
+				48D280CB15EEE1DB00497984 /* Images */,
+				484B911315EDAE5700898819 /* first.png */,
+				484B911515EDAE5700898819 /* first@2x.png */,
+				484B911A15EDAE5700898819 /* second.png */,
+				484B911C15EDAE5700898819 /* second@2x.png */,
+				484B913815EDB99100898819 /* Easy.mp3 */,
+				484B910315EDAE5600898819 /* effectsContainer-Info.plist */,
+				484B910415EDAE5600898819 /* InfoPlist.strings */,
+				484B910715EDAE5600898819 /* main.m */,
+				484B910915EDAE5600898819 /* effectsContainer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48D2809A15EE7AB000497984 /* iPublicUtility */ = {
+			isa = PBXGroup;
+			children = (
+				484B913115EDB39200898819 /* CADebugMacros.h */,
+				484B913215EDB39200898819 /* CADebugPrintf.h */,
+				484B913315EDB39200898819 /* CAMath.h */,
+				484B913415EDB39200898819 /* CAStreamBasicDescription.cpp */,
+				484B913515EDB39200898819 /* CAStreamBasicDescription.h */,
+				484B913615EDB39200898819 /* CAXException.h */,
+			);
+			name = iPublicUtility;
+			sourceTree = "<group>";
+		};
+		48D2809C15EE7ACC00497984 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				484B911015EDAE5700898819 /* PRPFirstViewController.h */,
+				484B911115EDAE5700898819 /* PRPFirstViewController.mm */,
+				484B911715EDAE5700898819 /* PRPSecondViewController.h */,
+				484B911815EDAE5700898819 /* PRPSecondViewController.mm */,
+				484B913A15EE75C100898819 /* PRPThirdViewController.h */,
+				484B913B15EE75C200898819 /* PRPThirdViewController.mm */,
+				48D2809E15EE8F2C00497984 /* PRPFourthViewController.h */,
+				48D2809F15EE8F2C00497984 /* PRPFourthViewController.mm */,
+				48D280A115EE961200497984 /* PRPFifthViewController.h */,
+				48D280A215EE961200497984 /* PRPFifthViewController.mm */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		48D2809D15EE7ADF00497984 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				484B912E15EDB28100898819 /* PRPaudioObject.h */,
+				484B912F15EDB28100898819 /* PRPaudioObject.mm */,
+				48F401DA15F4E27B00E513B8 /* smbPitchShift.m */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		48D280AC15EED1A700497984 /* Knob */ = {
+			isa = PBXGroup;
+			children = (
+				48D280C815EEE1AE00497984 /* MHRotaryKnob.h */,
+				48D280C915EEE1AE00497984 /* MHRotaryKnob.m */,
+				4860EB2015FA653D006F49FE /* UIImage+ColorAtPixel.h */,
+				4860EB2115FA653D006F49FE /* UIImage+ColorAtPixel.m */,
+			);
+			name = Knob;
+			sourceTree = "<group>";
+		};
+		48D280CB15EEE1DB00497984 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				48C4072A15F52A7800EBDCBE /* rotaryDialMaster_Disabled_Small.png */,
+				48C4072715F529C300EBDCBE /* Knob Background_Disabled.png */,
+				487CEAFE15F2820800EEBBF0 /* RecordButtonDepressed.png */,
+				487CEAFF15F2820800EEBBF0 /* RecordButtonPressed.png */,
+				48D2810815F02D0900497984 /* stopButtonDepressedLarge.png */,
+				48D2810915F02D0900497984 /* stopButtonPressedLarge.png */,
+				48D2810A15F02D0900497984 /* PlayButtonDepressed.png */,
+				48D2810B15F02D0A00497984 /* PlayButtonPressed.png */,
+				48D280FA15F0164900497984 /* Knob Background_Mini.png */,
+				48D280FB15F0164900497984 /* Knob_Mini.png */,
+				48D280F815EFEACA00497984 /* compressorTab.png */,
+				48D280F615EFD97D00497984 /* varispeedTab.png */,
+				48D280F415EFD3BB00497984 /* filterTab.png */,
+				48D280F215EFD03800497984 /* reverbTab.png */,
+				48D280F015EFCDC300497984 /* mixerTab.png */,
+				48D280EC15EFC8EF00497984 /* sliderButtonDepressed_New.png */,
+				48D280ED15EFC8F000497984 /* sliderButtonPressed_New.png */,
+				48D280E415EFC65500497984 /* sliderBarLeft.png */,
+				48D280E515EFC65500497984 /* sliderBarRight.png */,
+				48D280E615EFC65500497984 /* sliderButton.png */,
+				48D280E715EFC65500497984 /* sliderButtonPressed.png */,
+				48D280DC15EF09B700497984 /* Knob Background_New.png */,
+				48D280DD15EF09B700497984 /* Knob_New.png */,
+				48D280CC15EEE1DC00497984 /* Knob Background.png */,
+				48D280CD15EEE1DC00497984 /* Knob Background@2x.png */,
+				48D280CE15EEE1DC00497984 /* Knob Disabled.png */,
+				48D280CF15EEE1DC00497984 /* Knob Disabled@2x.png */,
+				48D280D015EEE1DC00497984 /* Knob Highlighted.png */,
+				48D280D115EEE1DC00497984 /* Knob Highlighted@2x.png */,
+				48D280D215EEE1DC00497984 /* Knob.png */,
+				48D280D315EEE1DC00497984 /* Knob@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		484B90F615EDAE5600898819 /* effectsContainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 484B912015EDAE5700898819 /* Build configuration list for PBXNativeTarget "effectsContainer" */;
+			buildPhases = (
+				484B90F315EDAE5600898819 /* Sources */,
+				484B90F415EDAE5600898819 /* Frameworks */,
+				484B90F515EDAE5600898819 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = effectsContainer;
+			productName = effectsContainer;
+			productReference = 484B90F715EDAE5600898819 /* effectsContainer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		484B90EE15EDAE5600898819 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PRP;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Phillip Parker";
+			};
+			buildConfigurationList = 484B90F115EDAE5600898819 /* Build configuration list for PBXProject "effectsContainer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 484B90EC15EDAE5600898819;
+			productRefGroup = 484B90F815EDAE5600898819 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				484B90F615EDAE5600898819 /* effectsContainer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		484B90F515EDAE5600898819 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484B910615EDAE5600898819 /* InfoPlist.strings in Resources */,
+				484B910F15EDAE5700898819 /* MainStoryboard.storyboard in Resources */,
+				484B911415EDAE5700898819 /* first.png in Resources */,
+				484B911615EDAE5700898819 /* first@2x.png in Resources */,
+				484B911B15EDAE5700898819 /* second.png in Resources */,
+				484B911D15EDAE5700898819 /* second@2x.png in Resources */,
+				484B913915EDB99100898819 /* Easy.mp3 in Resources */,
+				48D280D415EEE1DC00497984 /* Knob Background.png in Resources */,
+				48D280D515EEE1DC00497984 /* Knob Background@2x.png in Resources */,
+				48D280D615EEE1DC00497984 /* Knob Disabled.png in Resources */,
+				48D280D715EEE1DC00497984 /* Knob Disabled@2x.png in Resources */,
+				48D280D815EEE1DC00497984 /* Knob Highlighted.png in Resources */,
+				48D280D915EEE1DC00497984 /* Knob Highlighted@2x.png in Resources */,
+				48D280DA15EEE1DC00497984 /* Knob.png in Resources */,
+				48D280DB15EEE1DC00497984 /* Knob@2x.png in Resources */,
+				48D280DE15EF09B700497984 /* Knob Background_New.png in Resources */,
+				48D280DF15EF09B700497984 /* Knob_New.png in Resources */,
+				48D280E815EFC65500497984 /* sliderBarLeft.png in Resources */,
+				48D280E915EFC65500497984 /* sliderBarRight.png in Resources */,
+				48D280EA15EFC65500497984 /* sliderButton.png in Resources */,
+				48D280EB15EFC65500497984 /* sliderButtonPressed.png in Resources */,
+				48D280EE15EFC8F000497984 /* sliderButtonDepressed_New.png in Resources */,
+				48D280EF15EFC8F000497984 /* sliderButtonPressed_New.png in Resources */,
+				48D280F115EFCDC300497984 /* mixerTab.png in Resources */,
+				48D280F315EFD03800497984 /* reverbTab.png in Resources */,
+				48D280F515EFD3BB00497984 /* filterTab.png in Resources */,
+				48D280F715EFD97D00497984 /* varispeedTab.png in Resources */,
+				48D280F915EFEACA00497984 /* compressorTab.png in Resources */,
+				48D280FC15F0164900497984 /* Knob Background_Mini.png in Resources */,
+				48D280FD15F0164900497984 /* Knob_Mini.png in Resources */,
+				48D2810215F020B600497984 /* beatsMono.caf in Resources */,
+				48D2810315F020B600497984 /* guitarStereo.caf in Resources */,
+				48D2810C15F02D0A00497984 /* stopButtonDepressedLarge.png in Resources */,
+				48D2810D15F02D0A00497984 /* stopButtonPressedLarge.png in Resources */,
+				48D2810E15F02D0A00497984 /* PlayButtonDepressed.png in Resources */,
+				48D2810F15F02D0A00497984 /* PlayButtonPressed.png in Resources */,
+				487CEB0015F2820800EEBBF0 /* RecordButtonDepressed.png in Resources */,
+				487CEB0115F2820800EEBBF0 /* RecordButtonPressed.png in Resources */,
+				48C4072815F529C300EBDCBE /* Knob Background_Disabled.png in Resources */,
+				48C4072B15F52A7800EBDCBE /* rotaryDialMaster_Disabled_Small.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		484B90F315EDAE5600898819 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484B910815EDAE5600898819 /* main.m in Sources */,
+				484B910C15EDAE5600898819 /* PRPAppDelegate.m in Sources */,
+				484B911215EDAE5700898819 /* PRPFirstViewController.mm in Sources */,
+				484B911915EDAE5700898819 /* PRPSecondViewController.mm in Sources */,
+				484B913015EDB28100898819 /* PRPaudioObject.mm in Sources */,
+				484B913715EDB39200898819 /* CAStreamBasicDescription.cpp in Sources */,
+				484B913C15EE75C300898819 /* PRPThirdViewController.mm in Sources */,
+				48D280A015EE8F2C00497984 /* PRPFourthViewController.mm in Sources */,
+				48D280A315EE961200497984 /* PRPFifthViewController.mm in Sources */,
+				48D280CA15EEE1AE00497984 /* MHRotaryKnob.m in Sources */,
+				48F401DB15F4E27B00E513B8 /* smbPitchShift.m in Sources */,
+				4860EB2215FA653D006F49FE /* UIImage+ColorAtPixel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		484B910415EDAE5600898819 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				484B910515EDAE5600898819 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		484B910D15EDAE5700898819 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				484B910E15EDAE5700898819 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		484B911E15EDAE5700898819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		484B911F15EDAE5700898819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		484B912115EDAE5700898819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "effectsContainer/effectsContainer-Prefix.pch";
+				INFOPLIST_FILE = "effectsContainer/effectsContainer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		484B912215EDAE5700898819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "effectsContainer/effectsContainer-Prefix.pch";
+				INFOPLIST_FILE = "effectsContainer/effectsContainer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		484B90F115EDAE5600898819 /* Build configuration list for PBXProject "effectsContainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				484B911E15EDAE5700898819 /* Debug */,
+				484B911F15EDAE5700898819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		484B912015EDAE5700898819 /* Build configuration list for PBXNativeTarget "effectsContainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				484B912115EDAE5700898819 /* Debug */,
+				484B912215EDAE5700898819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 484B90EE15EDAE5600898819 /* Project object */;
+}

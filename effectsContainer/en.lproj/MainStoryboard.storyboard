@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller - Mixer-->
+        <scene sceneID="11">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
+                <viewController title="Mixer" id="2" customClass="PRPFirstViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="16">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jEH-Wq-cfL">
+                                <rect key="frame" x="14" y="20" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Start" image="PlayButtonDepressed.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="PlayButtonPressed.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="2" eventType="touchUpInside" id="4it-aI-2Qg"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="dg6-pL-Mcx">
+                                <rect key="frame" x="98" y="121" width="204" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="volumeControl:" destination="2" eventType="valueChanged" id="ysG-jg-mtE"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="POn-xK-48o">
+                                <rect key="frame" x="98" y="198" width="204" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="volumeControl:" destination="2" eventType="valueChanged" id="FZH-Na-Ywd"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Kit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="lc6-mq-c9h">
+                                <rect key="frame" x="100" y="92" width="78" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Guitar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="doE-cD-dCw">
+                                <rect key="frame" x="100" y="169" width="78" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" progressViewStyle="bar" id="HVT-ve-O63">
+                                <rect key="frame" x="100" y="151" width="200" height="11"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="trackTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" progressViewStyle="bar" id="mrN-41-T1E">
+                                <rect key="frame" x="100" y="228" width="200" height="11"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="trackTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            </progressView>
+                            <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="mN9-eG-TPB">
+                                <rect key="frame" x="98" y="276" width="204" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="volumeControl:" destination="2" eventType="valueChanged" id="7jQ-uT-cy3"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mic Input" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="daE-vU-FrQ">
+                                <rect key="frame" x="100" y="246" width="78" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" progressViewStyle="bar" id="ZaY-HW-sEA">
+                                <rect key="frame" x="100" y="306" width="200" height="11"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="trackTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WPn-N3-k8S">
+                                <rect key="frame" x="87" y="20" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Stop" image="stopButtonDepressedLarge.png">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="stopButtonPressedLarge.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stop:" destination="2" eventType="touchUpInside" id="3Qz-Yi-z9R"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="eTO-U9-jT8" customClass="MHRotaryKnob">
+                                <rect key="frame" x="14" y="108" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="knonDidMove:" destination="2" eventType="valueChanged" id="LZF-cK-JaC"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="EPZ-B1-PcC" customClass="MHRotaryKnob">
+                                <rect key="frame" x="14" y="186" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="knonDidMove:" destination="2" eventType="valueChanged" id="iaC-Pd-jsa"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="XFw-p8-kJV" customClass="MHRotaryKnob">
+                                <rect key="frame" x="14" y="264" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="knonDidMove:" destination="2" eventType="valueChanged" id="gi2-Pa-zZZ"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="754-k7-XRP">
+                                <rect key="frame" x="160" y="20" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="RecordButtonDepressed.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="RecordButtonDepressed.png"/>
+                                <state key="highlighted" image="RecordButtonPressed.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="record:" destination="2" eventType="touchUpInside" id="pxL-wq-3Y3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="COY-LC-Ipj">
+                                <rect key="frame" x="156" y="343" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="test:" destination="2" eventType="touchUpInside" id="JCI-Gt-74R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mixer" image="mixerTab.png" id="7"/>
+                    <connections>
+                        <outlet property="channel0" destination="HVT-ve-O63" id="P8c-fu-3RN"/>
+                        <outlet property="channel1" destination="mrN-41-T1E" id="cDv-lG-Llf"/>
+                        <outlet property="channel2" destination="ZaY-HW-sEA" id="FYm-UY-dpO"/>
+                        <outlet property="channelOneSlider" destination="dg6-pL-Mcx" id="217-6g-hlA"/>
+                        <outlet property="channelThreeSlider" destination="mN9-eG-TPB" id="2qV-Fw-0Fx"/>
+                        <outlet property="channelTwoSlider" destination="POn-xK-48o" id="D2i-UI-aVm"/>
+                        <outlet property="recordButton" destination="754-k7-XRP" id="llg-DC-kQs"/>
+                        <outlet property="rotaryPanOne" destination="eTO-U9-jT8" id="L37-fF-iLS"/>
+                        <outlet property="rotaryPanThree" destination="XFw-p8-kJV" id="Hgf-TA-H6r"/>
+                        <outlet property="rotaryPanTwo" destination="EPZ-B1-PcC" id="NCV-Dm-D37"/>
+                        <outlet property="startButton" destination="jEH-Wq-cfL" id="CjV-Fg-rDW"/>
+                        <outlet property="stopButton" destination="WPn-N3-k8S" id="N1a-tJ-QBQ"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="552" y="-384"/>
+        </scene>
+        <!--Third View Controller - Filter-->
+        <scene sceneID="pr2-O9-lFZ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dyz-Fx-7V6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="BDF-dS-jyo" customClass="PRPThirdViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fzz-NG-y6Y">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Low Pass Cutoff Frequency" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="dhn-QE-Zwv">
+                                <rect key="frame" x="20" y="20" width="211" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Low Pass Resonance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="sDH-lt-0ZN">
+                                <rect key="frame" x="183" y="89" width="122" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="High Pass Cutoff Frequency" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="4Mw-Rc-pJ2">
+                                <rect key="frame" x="20" y="212" width="214" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="High Pass Resonance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="l7X-sv-dES">
+                                <rect key="frame" x="179" y="261" width="121" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="PqR-gI-n3t" customClass="MHRotaryKnob">
+                                <rect key="frame" x="20" y="49" width="100" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="knobDidMove:" destination="BDF-dS-jyo" eventType="valueChanged" id="vbV-Vf-U6J"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="4Iv-5e-EdE" customClass="MHRotaryKnob">
+                                <rect key="frame" x="200" y="118" width="100" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="knobDidMove:" destination="BDF-dS-jyo" eventType="valueChanged" id="6YP-0t-uL1"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="NLJ-ol-S3m" customClass="MHRotaryKnob">
+                                <rect key="frame" x="20" y="241" width="100" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="knobDidMove:" destination="BDF-dS-jyo" eventType="valueChanged" id="TqJ-bw-hBU"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="tV4-aJ-XJL" customClass="MHRotaryKnob">
+                                <rect key="frame" x="200" y="290" width="100" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="knobDidMove:" destination="BDF-dS-jyo" eventType="valueChanged" id="plr-yQ-wJ0"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Filter" image="filterTab.png" id="HFX-N7-rdB"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="hiPassCutFreg" destination="NLJ-ol-S3m" id="KQH-NC-7DG"/>
+                        <outlet property="hiPassRes" destination="tV4-aJ-XJL" id="QSo-gU-MnL"/>
+                        <outlet property="lowPassCutFreg" destination="PqR-gI-n3t" id="Z3J-vQ-WFL"/>
+                        <outlet property="lowPassRes" destination="4Iv-5e-EdE" id="FXK-Ae-k9K"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1081" y="186"/>
+        </scene>
+        <!--Fifth View Controller - Compressor-->
+        <scene sceneID="xzE-l2-dAy">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="muM-Cv-78N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="gjk-PU-na0" customClass="PRPFifthViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dql-Mq-AOR">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="28s-RF-MjT" customClass="MHRotaryKnob">
+                                <rect key="frame" x="0.0" y="68" width="100" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="didMoveKnob:" destination="gjk-PU-na0" eventType="valueChanged" id="yFt-5o-7PA"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="sQb-c5-cTu" customClass="MHRotaryKnob">
+                                <rect key="frame" x="220" y="68" width="100" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="didMoveKnob:" destination="gjk-PU-na0" eventType="valueChanged" id="Gq4-UH-Dc9"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="J7c-0v-LC8" customClass="MHRotaryKnob">
+                                <rect key="frame" x="110" y="20" width="100" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="didMoveKnob:" destination="gjk-PU-na0" eventType="valueChanged" id="9w6-YL-i8V"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="7xg-Lo-Wz5" customClass="MHRotaryKnob">
+                                <rect key="frame" x="110" y="155" width="100" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="didMoveKnob:" destination="gjk-PU-na0" eventType="valueChanged" id="W4W-Cc-Agg"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="yDo-wb-wBg" customClass="MHRotaryKnob">
+                                <rect key="frame" x="0.0" y="244" width="100" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="didMoveKnob:" destination="gjk-PU-na0" eventType="valueChanged" id="IEn-wJ-ZWt"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="4Q3-eY-XVo" customClass="MHRotaryKnob">
+                                <rect key="frame" x="220" y="244" width="100" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="didMoveKnob:" destination="gjk-PU-na0" eventType="valueChanged" id="7jG-JR-kOx"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="V7W-Nc-0MG" customClass="MHRotaryKnob">
+                                <rect key="frame" x="110" y="290" width="100" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="didMoveKnob:" destination="gjk-PU-na0" eventType="valueChanged" id="Uga-Cg-Eju"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Attack" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="zKs-dh-BGx">
+                                <rect key="frame" x="0.0" y="39" width="37" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Release" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="lXk-wV-inZ">
+                                <rect key="frame" x="220" y="39" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Threshold" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ipb-Zg-KHO">
+                                <rect key="frame" x="133" y="0.0" width="54" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Expansion Ratio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="RPS-gp-OI8">
+                                <rect key="frame" x="0.0" y="352" width="95" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Expansion Thresh" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="X1R-FQ-qBX">
+                                <rect key="frame" x="218" y="352" width="113" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Headroom" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="QU6-uj-ycy">
+                                <rect key="frame" x="131" y="390" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Gain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Kkg-mm-goW">
+                                <rect key="frame" x="73" y="195" width="28" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Compressor" image="compressorTab.png" id="vC0-qg-Xyh"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="rotaryAttack" destination="28s-RF-MjT" id="bSy-yf-HkK"/>
+                        <outlet property="rotaryExpanRatio" destination="yDo-wb-wBg" id="dC8-kX-ndr"/>
+                        <outlet property="rotaryExpanThresh" destination="4Q3-eY-XVo" id="hvr-5C-UsD"/>
+                        <outlet property="rotaryGain" destination="7xg-Lo-Wz5" id="OUk-7L-dcc"/>
+                        <outlet property="rotaryHeadroom" destination="V7W-Nc-0MG" id="hNI-s6-uif"/>
+                        <outlet property="rotaryRelease" destination="sQb-c5-cTu" id="QAc-dd-er5"/>
+                        <outlet property="rotaryThreshold" destination="J7c-0v-LC8" id="vnE-5t-fUe"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="552" y="791"/>
+        </scene>
+        <!--Fourth View Controller - Varispeed-->
+        <scene sceneID="Gw4-C4-4qc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Puu-UV-7zd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="PCe-ag-TSi" customClass="PRPFourthViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PLM-5P-Bcu">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="Sww-VC-Bhi">
+                                <rect key="frame" x="0.0" y="300" width="320" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Vocal Track Only" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="5HU-L1-3Up">
+                                        <rect key="frame" x="20" y="20" width="92" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="z52-qs-bCw">
+                                        <rect key="frame" x="98" y="49" width="204" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="pitchShift:" destination="PCe-ag-TSi" eventType="valueChanged" id="NZW-nm-TyH"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="MmS-9v-10x">
+                                        <rect key="frame" x="100" y="78" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pitch Shift" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="MqI-U0-LbE">
+                                        <rect key="frame" x="20" y="49" width="59" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Frequency" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="b71-GT-TfA">
+                                        <rect key="frame" x="20" y="78" width="59" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Varispeed Rate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="VIR-tp-pvp">
+                                <rect key="frame" x="118" y="126" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="IKv-pf-78u" customClass="MHRotaryKnob">
+                                <rect key="frame" x="110" y="155" width="100" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="rotaryKnobDidMove:" destination="PCe-ag-TSi" eventType="valueChanged" id="NnN-f6-n6g"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Varispeed" image="varispeedTab.png" id="qYh-dz-e9g"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="frequency" destination="MmS-9v-10x" id="zkm-op-7fA"/>
+                        <outlet property="pitchShifter" destination="z52-qs-bCw" id="4JW-3b-VQa"/>
+                        <outlet property="rotaryVarispeed" destination="IKv-pf-78u" id="wM0-al-TZ9"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1081" y="791"/>
+        </scene>
+        <!--Second View Controller - Reverb-->
+        <scene sceneID="13">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
+                <viewController title="Reverb" id="3" customClass="PRPSecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="17">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Dry/Wet Mix " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="raF-9L-pKa">
+                                <rect key="frame" x="0.0" y="39" width="99" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Decay Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="rnC-lP-HiD">
+                                <rect key="frame" x="220" y="39" width="91" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Decay Time at Nyquist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="hM4-fX-Il4">
+                                <rect key="frame" x="100" y="0.0" width="172" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Gain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="jel-Vu-P98">
+                                <rect key="frame" x="73" y="195" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Max Delay Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Zzl-uU-9jp">
+                                <rect key="frame" x="0.0" y="353" width="123" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Min Delay Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Xgz-kR-I6f">
+                                <rect key="frame" x="220" y="353" width="119" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Randomise Reflections" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="wii-cz-mso">
+                                <rect key="frame" x="100" y="390" width="176" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="8Pa-iJ-9ZD" customClass="MHRotaryKnob">
+                                <rect key="frame" x="0.0" y="68" width="100" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="rotaryKnobDidMove:" destination="3" eventType="valueChanged" id="kGb-22-Y1u"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="B0c-aX-WPQ" customClass="MHRotaryKnob">
+                                <rect key="frame" x="220" y="68" width="100" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="rotaryKnobDidMove:" destination="3" eventType="valueChanged" id="zeJ-RJ-gvA"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="RXk-3W-9cU" customClass="MHRotaryKnob">
+                                <rect key="frame" x="110" y="20" width="100" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="rotaryKnobDidMove:" destination="3" eventType="valueChanged" id="PGF-sL-h8Z"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="J1P-Ld-VMf" customClass="MHRotaryKnob">
+                                <rect key="frame" x="110" y="155" width="100" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="rotaryKnobDidMove:" destination="3" eventType="valueChanged" id="SHo-BG-J9V"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="rez-et-Zwl" customClass="MHRotaryKnob">
+                                <rect key="frame" x="0.0" y="244" width="100" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="rotaryKnobDidMove:" destination="3" eventType="valueChanged" id="P3o-Ki-h29"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="Xmi-ya-MdG" customClass="MHRotaryKnob">
+                                <rect key="frame" x="110" y="290" width="100" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="rotaryKnobDidMove:" destination="3" eventType="valueChanged" id="KSt-oC-U0O"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="BcL-ua-kEa" customClass="MHRotaryKnob">
+                                <rect key="frame" x="220" y="244" width="100" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="rotaryKnobDidMove:" destination="3" eventType="valueChanged" id="Xce-nn-gfw"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Reverb/Delay" image="reverbTab.png" id="6"/>
+                    <connections>
+                        <outlet property="rotaryDecayTime" destination="B0c-aX-WPQ" id="Xrv-4g-xf0"/>
+                        <outlet property="rotaryDecayTimeAtNyquist" destination="RXk-3W-9cU" id="Zi4-I3-Jm4"/>
+                        <outlet property="rotaryGain" destination="J1P-Ld-VMf" id="hT2-UY-o9x"/>
+                        <outlet property="rotaryMaxDelayTime" destination="rez-et-Zwl" id="t9e-3E-jfR"/>
+                        <outlet property="rotaryMinDelayTime" destination="BcL-ua-kEa" id="MB9-a9-WMb"/>
+                        <outlet property="rotaryRandomiseReflections" destination="Xmi-ya-MdG" id="PfH-ht-v8n"/>
+                        <outlet property="rotaryWetDry" destination="8Pa-iJ-9ZD" id="guG-Jd-FPi"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1081" y="-384"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="15">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
+                <tabBarController id="4" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
+                        <segue destination="3" kind="relationship" relationship="viewControllers" id="27"/>
+                        <segue destination="BDF-dS-jyo" kind="relationship" relationship="viewControllers" id="m6c-xH-7Ts"/>
+                        <segue destination="PCe-ag-TSi" kind="relationship" relationship="viewControllers" id="D0A-cP-phS"/>
+                        <segue destination="gjk-PU-na0" kind="relationship" relationship="viewControllers" id="eO2-3N-op2"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="552" y="186"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PlayButtonDepressed.png" width="281" height="281"/>
+        <image name="PlayButtonPressed.png" width="281" height="281"/>
+        <image name="RecordButtonDepressed.png" width="281" height="281"/>
+        <image name="RecordButtonPressed.png" width="281" height="281"/>
+        <image name="compressorTab.png" width="30" height="30"/>
+        <image name="filterTab.png" width="30" height="30"/>
+        <image name="mixerTab.png" width="30" height="30"/>
+        <image name="reverbTab.png" width="30" height="30"/>
+        <image name="stopButtonDepressedLarge.png" width="281" height="281"/>
+        <image name="stopButtonPressedLarge.png" width="281" height="281"/>
+        <image name="varispeedTab.png" width="30" height="30"/>
+    </resources>
+    <classes>
+        <class className="MHRotaryKnob" superclassName="UIControl">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MHRotaryKnob.h"/>
+        </class>
+        <class className="PRPFifthViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PRPFifthViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="didMoveKnob:" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="rotaryAttack" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="rotaryExpanRatio" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="rotaryExpanThresh" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="rotaryGain" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="rotaryHeadroom" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="rotaryRelease" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="rotaryThreshold" candidateClass="MHRotaryKnob"/>
+            </relationships>
+        </class>
+        <class className="PRPFirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PRPFirstViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="knonDidMove:" candidateClass="MHRotaryKnob"/>
+                <relationship kind="action" name="record:"/>
+                <relationship kind="action" name="start:"/>
+                <relationship kind="action" name="stop:"/>
+                <relationship kind="action" name="test:"/>
+                <relationship kind="action" name="volumeControl:" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="channel0" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="channel1" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="channel2" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="channelOneSlider" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="channelThreeSlider" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="channelTwoSlider" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="recordButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="rotaryPanOne" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="rotaryPanThree" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="rotaryPanTwo" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="startButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="stopButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="PRPFourthViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PRPFourthViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="pitchShift:" candidateClass="UISlider"/>
+                <relationship kind="action" name="rotaryKnobDidMove:" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="frequency" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pitchShifter" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="rotaryVarispeed" candidateClass="MHRotaryKnob"/>
+            </relationships>
+        </class>
+        <class className="PRPSecondViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PRPSecondViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="rotaryKnobDidMove:" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="rotaryDecayTime" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="rotaryDecayTimeAtNyquist" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="rotaryGain" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="rotaryMaxDelayTime" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="rotaryMinDelayTime" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="rotaryRandomiseReflections" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="rotaryWetDry" candidateClass="MHRotaryKnob"/>
+            </relationships>
+        </class>
+        <class className="PRPThirdViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PRPThirdViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="knobDidMove:" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="hiPassCutFreg" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="hiPassRes" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="lowPassCutFreg" candidateClass="MHRotaryKnob"/>
+                <relationship kind="outlet" name="lowPassRes" candidateClass="MHRotaryKnob"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
